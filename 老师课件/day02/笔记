@@ -1,0 +1,56 @@
+[VScode]   DW  sublime  webstrom  vscode  Hbudier atom ...
+1.插件  
+-  汉化 chinese 
+-  浏览器运行我们页面  open in brower
+-  实时刷新页面效果    live server
+
+2.常用的配置
+- 自动保存 Auto Save   off  => afterDelay
+- 字号大小 Font Size  
+- 代码折行 Word Wrap  off => on 
+
+[标签的语法和特点]
+有左右尖括号包起来的,中间放的是小写的标签名   <div>
+标签一般是由开始标签和结束标签组成,结束标签比开始标签要多一个反斜杠  <div></div>
+有的标签是没有结束标签的,在开始标签的地方自动闭合,这种标签叫单标签或者自闭合标签   <img />
+标签名   tab 可以自动生成一组标签,有结束就会生成结束标签,没有结束标签大家也不要手动去添加结束标签
+
+[标签属性]
+标签属性是对标签的附加信息的描述
+语法: 属性名  = "属性值"    样式属性语法  属性名: 属性值
+一般放在开始标签名的后面,和标签名中间有一个空格隔开
+标签名后面可以加多组属性名属性值,而且每一组之间用空格隔开
+
+[常用的标签]
+img  插入图片  src=""   alt="" title =""
+a  超链接  href=""  target = "_blank"  _self
+p  文字段落
+h1-h6 标题标签
+div 容器标签,用来划分结构,方便整体控制
+
+[CSS样式的简单美化]
+<style>
+选择器{
+    属性名: 属性值;
+    属性名: 属性值;
+    .......
+}
+</style>
+
+[选择器]
+1.直接通过标签名称选中元素,叫做标签选择器 p{}
+2.class 类选择器,对应的符号 .p1{}
+3.通配符选择器  *  代表页面中的所有用到的标签
+ *{margin:0;padding: 0;}
+
+ [居中]
+ 1.div 块级元素 居中   margin:0 auto
+ 2.文本居中  text-align:center 居中  left 居左 right 居右 
+
+ [间距]
+ 1.文字与文字的间距 line-height 行高
+ 2.模块与模块的间距 margin-top/bottom/left/right
+
+[边框线]
+边框线: 宽度 类型  颜色  dashed 虚线   solid 实线  dotted 点状线
+

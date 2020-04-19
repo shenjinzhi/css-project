@@ -1,0 +1,63 @@
+【HTML】
+1.什么叫HTML标签
+2.HTML编辑器IDE - DW、sublime、webstorm、atom、vscode、Hbuilder
+3.HTML元素和属性 
+4.HTML标题 - h1-h6   
+   logo实战应用: img插入图片 alt = "文字"   
+   背景图片 <h1>文字内容<h1>  text-indent:-9999px/em
+5.HTML段落 - p
+6.HTML样式 - style 内嵌式  <style> 样式属性 </style>
+7.HTML格式化 - 行内标签(斜体、加粗、上下标、变大变小、删除标签)
+8.HTML注释 - ctrl + /     HTML: <!-- 注释 -->   CSS: /* 注释 */ JS: // 注释
+9.HTML样式标签 - link 外链式
+10.HTML链接 -  a  href = "#" / href = "javascript:;"  target = "_blank"
+11.HTML图像 - img  src ="" alt = "" title =""
+12.HTML表格 -  table tr td / th  caption  合并列 colspan 合并行rowspan
+13.HTML列表 - 块级标签(有序 ol li 、无序 ul li、定义列表 dl dt dd) 
+14.HTML 块 - div(块级元素) 、span(行内元素)  - 特殊: a(链接跳转)里面是可以嵌套div
+15.HTML布局 - table 、div 布局 (面试题: div和table布局的优缺点)
+16.HTML响应式设计 - Bootstrap布局
+17.HTML内嵌标签 - iframe src = "" 
+18.HTML背景 bgcolor = "red"(标签属性)  background-color:red;(样式属性)
+   黑色: black、 #000、rgb(0,0,0)   rgba(0,0,0,.5)
+   白色: white、 #fff、rgb(255,255,255)
+19.HTML脚本 - script
+20.HTML路径 - 绝对路径D:\2019第16期\day14\1.html、
+              相对路径day14\1.html  :上一级： ../ 下一级： /  同级：直接写文件的名称
+            - src、href、url、 
+21.HTML头部 - head: meta 、title、link、script、style...
+22.HTML字符实体 - 空格 &nbsp;、大于号 &gt、小于号&lt、版权&copy、
+23.HTML文档申明 - <!DOCTYPE> 
+
+【HTML5】
+1.新的标签 - header、footer、nav、section、figure、figcaption、article、aside、datalist ....
+2.音频，视频 - video(mp4)、audio(mp3) 
+3.表单的类型
+4.canvas画布 => JS
+5.svg
+
+【CSS】
+1.选择器
+2.字体类
+3.文本类
+4.背景类
+5.盒子模型类
+6.浮动类
+7.定位类
+8.媒体查询
+9.重置类
+
+【CSS3】
+1.动画类  transform 变换  transition 过渡动画  animation 帧动画 @keyframes
+2.圆角 border-radius
+3.渐变 liear-gradient
+4.阴影 盒子阴影 box-shadow 文字阴影 text-shadow
+5.背景类  background-clip  background-size
+6.字体图标 @font-face
+7.CSS3多列布局
+8.CSS3新增选择器
+
+
+
+
+

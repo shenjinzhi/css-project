@@ -1,0 +1,65 @@
+/* 分组(并列)选择器  x1,x2{}  
+x1{color:red;}
+x2{color:red;}
+
+合并 - 样式优化
+x1,x2{color:red;}
+
+% 参照父元素的大小 html  body  .footer
+*/
+html,body,.footer{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background:url(../images/pic.png) no-repeat;
+    /* 背景大小(尺寸): 覆盖 充满  CSS3新增的一个背景类的属性 */
+    background-size: cover;
+}
+/* 子级选择器 儿子这个级别 >   
+ .west01,.west02,.west03,.west04{float:left}*/
+.footer>div{
+    float:left;
+}
+.footer{
+   width: 780px;
+   margin:0 auto 
+}
+.west01{
+    width: 200px;
+    height: 180px;  
+    background:greenyellow url(../images/west_01_3ca39fe.png) no-repeat;
+    animation: west01 1s steps(8) infinite;
+}
+.west02{
+    width: 200px;
+    height: 180px;  
+    background: indianred url(../images/west_02_47bad19.png) no-repeat;
+}
+.west03{
+    width: 170px;
+    height: 240px;
+    background:darkcyan url(../images/west_03_f962447.png) no-repeat;
+}
+.west04{
+    width: 210px;
+    height: 200px;
+    background: darkkhaki url(../images/west_04_6516d80.png) no-repeat;
+}
+
+/* CSS3动画 animation  */
+@keyframes west01{
+    0%{background-position: 0 0;}
+    100%{background-position: -1600px 0;}
+}
+
+/* 
+写动画的第一步: 通过@keyframes 指定好动画运动的轨迹
+@keyframes 动画的名称{
+    // 关键帧 
+    0%{}
+    100%{} 
+} 
+写动画的第二步: 通过animation去调用第一步规定好的名称
+animation: 动画的名称   动画持续的时间  动画运动的曲线   动画运动的次数....
+*/

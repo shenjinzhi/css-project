@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description " content =" ">
+    <meta name="keywords " content =" ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>珠峰培训</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+    /* 定位居中  calc(100% - 10px)
+    可以移动元素位置: margin、tranlate、定位的方位top bottom left right
+    position: absolute;left:50%;top:50%;margin-top:-150px;margin-left:-150px;
+    position: absolute;left:50%;top:50%;transform: translate(-50%,-50%); 
+    position: absolute;top: 0;bottom: 0;left: 0;right: 0;margin:auto;
+     */
+    .parent{
+        width: 500px;
+        height: 500px;
+        background: #000;
+        position: relative;
+    }
+    .son{
+        width: 300px;
+        height: 300px;
+        background: red;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin:auto
+        
+    }
+    </style>
+</head>
+<body>
+<div class="parent">
+    <div class="son"></div>
+</div>
+</body>
+</html>

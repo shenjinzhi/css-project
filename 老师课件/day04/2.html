@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description " content =" ">
+    <meta name="keywords " content =" ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>珠峰培训</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /* 单位 px  %  em  rem */
+
+
+        /* 标签 权重1 class权重 10   id 权重100   !important 1000
+         !important  > id > class > 标签
+         行内 > 内嵌 (就近原则)
+         
+         权重相等: 后面 >  前面
+
+        */
+    /* *{margin:0;padding:0}    
+    h1{color:red!important;} 
+    .text{color:rebeccapurple}
+    #art{color:gold} */
+
+    /* 后代选择器  3个以下的关键节点  权重: 基本选择器的权重之和*/
+    .list span img{}
+
+
+    a{color:#ccc;}
+    #contact a{color:#336699}
+    .safelink a{color:#f60}
+    h1 a{color:#eee}
+    </style>
+</head>
+<body>
+<h1 class="text" id="art" style="color:orange">珠峰培训</h1>
+<div class="text"></div>
+<ul class="list">
+    <li>
+        <a href="#">
+            <span>
+                <img src="" alt="">
+            </span>
+        </a>
+    </li>
+</ul>
+
+
+
+<div id="contact">
+    <h1 class="safelink">
+        <a href="#">360桌面</a>
+    </h1>
+</div>
+
+</body>
+</html>

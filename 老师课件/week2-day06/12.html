@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description " content =" ">
+    <meta name="keywords " content =" ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>珠峰培训</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+    /* margin-top 传递问题 解决办法 原理: BFC  ???*/
+    .product:hover .layer{
+        display: block;
+    }
+    .layer{
+        display: none;
+        width: 200px;
+        height: 200px;  
+        margin-top:100px;
+        background-color: darkgrey; 
+        /* CSS3 边框类属性 圆角 */
+        border-radius:5px;
+        float:left;
+    }
+    .layer::before{
+        content: "";
+        display: block;
+        width:0;
+        height:0;
+        border-width:40px;
+        border-style: solid;
+        border-color:transparent transparent darkgrey transparent;
+        /* 定位position:absolute;去定位三角形  margin进行位移 会产生margin-top的传递问题*/
+        margin-top:-80px;
+        margin-left:30px;
+       
+    }
+    </style>
+</head>
+<body>
+<div class="product"> 
+    <span>产品</span>
+    <div class="layer">
+    
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 网页的头部 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<!-- 网页的主体 -->
+<body>
+    <!-- 我们网页的内容  插入图片 img  tab -->
+    <img src="图片的路径地址" alt="">
+    <!-- 本地的图片  1.图片不在文件夹里  2.图片在图片文件夹 images
+    src = "图片的路径地址 本地 / 线上"
+    alt = "图片的描述文字，图片路径加载失败或者错误的时候才会出现"
+    title = "图片的描述文字 鼠标移动到图片上会出现"
+    -->
+    <img src="images/pic.jpg.webp" alt="" title="我是图片的标签">
+    
+    <!-- 超链接 a  tab 
+    想要跳转的网页: 在线地址  本地的两个文件之间跳转  1.html  2.html    
+    href = "想要跳转的路径地址"
+    target="_blank"  新开一个窗口打开我们要跳转的页面,不会覆盖我们原有的页面 
+    在当前窗口打开我们要跳转的页面，覆盖我们原有的页面 不用加 target="_blank"，
+    target="_self" (默认属性)
+    -->
+    <a href="https://www.baidu.com" target="_blank"> 百度首页 </a>
+    <a href="2.html">我是网页1</a>
+    <a href="#"></a>
+
+    <!-- 文字段落 p -->
+    <p>新京报快讯 据@气象北京 消息，北京市气象台16日6时发布：今天上班时阴有雪，-1～0℃；今天早晨到白天阴有中雪转多云，北转南风2、3级，最高气温2℃；夜间多云转晴，南风2、3级转北风4级，最低气温-3℃。暴雪蓝色和道路结冰黄色预警中，早高峰出行注意交通安全和防寒保暖。</p>
+
+    <!-- 标题标签 h1-6系列
+    特点: h的小标越大  文字字号越小  默认是加粗的效果 
+    文章页大标题h1   网页模块的标题 h2/h3
+    -->
+    <h1>珠峰培训</h1>
+    <h2>珠峰培训</h2>
+    <h3>珠峰培训</h3>
+    <h4>珠峰培训</h4>
+    <h5>珠峰培训</h5>
+    <h6>珠峰培训</h6>
+
+    <!-- 视频播放器 video tab 
+    src = "视频播放器路径 mp4"
+    autoplay = "autoplay"  直接简写为 autoplay  自动播放
+    control  播放器控件
+    -->
+    <video src=".mp4" autoplay  control></video>
+    <embed src=".swf" type="">
+
+    <!-- 查看网页的代码  F12 或者 鼠标右键 = 检查 都可以调出控制面板  左上角有个小箭头,可以描到你想要看的元素身上 -->
+</body>
+</html>

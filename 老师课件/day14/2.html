@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0;maximum-scale=1.0; minimum-scale=1.0;user-scalable=no;">
+    <meta name="description " content =" ">
+    <meta name="keywords " content =" ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>珠峰培训</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+    *{margin: 0;padding: 0;}
+    .meta-links{margin-left:-2px;}
+    .meta-link{width: 25%;height:260px;float: left;border-left:2px solid #fff;box-sizing: border-box;}
+    .meta-link:nth-child(1){background: darksalmon;}
+    .meta-link:nth-child(2){background: hotpink;}
+    .meta-link:nth-child(3){background: gold;}
+    .meta-link:nth-child(4){background: green;}
+    /* 媒体查询@mdia 是有一定条件的样式覆盖 1080  640
+    @media 设备的类型 连接符 (判断条件){
+        选择器{css属性}
+    }
+    设备的类型: srceen 移动设备  TV  print 打印机  all 所有类型
+    连接符: and  only not
+    判断条件： max-  min-
+    {}
+    上面的每个关键词之间需要用一个空格隔开
+
+    简写:
+    @media (判断条件) {}
+    */
+    @media screen and (max-width: 1080px){
+        .meta-link{width:50%}
+    }
+    @media screen and (max-width: 640px){
+        .meta-link{width:100%}
+    }
+    /* PC、手机、PAD 同时适配的项目  github 二维码 
+    
+    三种类型项目: 
+    1.纯PC   单位:px %
+    2.纯手机端 单位:rem
+    3.PC，手机，pad响应式项目  单位: px %  vh  vw  => 媒体查询
+    */
+    </style>
+</head>
+<body>
+<div class="meta-links">
+    <div class="meta-link"></div>
+    <div class="meta-link"></div>
+    <div class="meta-link"></div>
+    <div class="meta-link"></div>
+</div>
+
+<!--  https://mengmenglimeng.github.io/zhufeng/  +  文件名称
+jd.html
+mi.html
+index.html
+
+jd 文件夹  index.html
+mi 文件夹  index.html
+-->
+</body>
+</html>

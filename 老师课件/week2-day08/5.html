@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description " content =" ">
+    <meta name="keywords " content =" ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>珠峰培训</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+           /* CSS3 主要用在手机端页面  PC端页面 建议用float*/
+           display: flex;
+        }
+        .left,.right{
+            /* float: left; */
+            /* display: inline-block; */
+            width: 200px;
+            height: 100px;
+            background:red;
+            margin-bottom:10px;
+        }
+        .icon{
+            overflow: hidden;
+        }
+        .icon i{
+            float: left;
+            width:50px;
+            height: 50px;
+            background: url(https://mobike.com/cn/assets/themes/moby/img/icon-wechat.png) no-repeat;
+            background-size: contain;
+        }
+    </style>
+</head>
+<body>
+    <!-- float 和 display:inline-block的区别，项目中怎么选用？？ 
+    1.相同点: 上下结构 => 左右结构 
+    2.区别
+    + float色块不会受换行符产生间距   display:inline-block 色块会受换行符产生间距 
+    + float 会导致父元素的高度塌陷为0  display:inline-block 不会有这样的问题  
+    + 兼容性: float全兼容    display:inline-block  (IE6,7下不兼容)
+    + 布局: 左右结构 float  小图标 + 文字组合  display:inline-block (基线对齐) 
+    + 对齐的方式: 行内块对齐是基线对齐 vertical-align: top/middle/bottom
+                 浮动对齐  用margin去微调间距让图标和文字对齐
+
+    口令: 用浮动一定要随手就把当前浮动产生的影响清除掉
+          用行内块一定要去间距，处理兼容            
+    -->
+    <div class="main">
+        <div class="left">珠峰培训</div>
+        <div class="right">珠峰培训</div>
+    </div>
+
+    <div class="icon clearfix">
+        <i></i>
+        微信
+    </div>
+    <ul>
+        <li>珠峰培训珠峰培训珠峰培训</li>
+        <li>珠峰培训珠峰培训珠峰培训</li>
+        <li>珠峰培训珠峰培训珠峰培训</li>
+        <li>珠峰培训珠峰培训珠峰培训</li>
+    </ul>
+
+    <!-- 嵌入外部的网站 -->
+    <iframe src="https://www.ifeng.com/" frameborder="0" width="1000" height = "1000"></iframe>
+</body>
+</html>

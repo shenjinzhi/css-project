@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description " content =" ">
+    <meta name="keywords " content =" ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>珠峰培训</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+    table{
+        /* 合并table默认的间隙 */
+        border-collapse: collapse;
+        text-align: center;
+    }
+    /* :nth-child(2n) 2n = even 偶数行   2n+1 = odd 奇数行  奇偶行变色特效 */
+    tr:nth-child(2n){background-color: darksalmon;}
+    tr:nth-child(2n+1){background-color: blueviolet;}
+    tr:hover{background-color: darkseagreen;}
+
+    .tabBox .tr-one{background-color: yellow;}
+    </style>
+</head>
+<body>
+    <!-- tr 行   td 列   th 加粗并且居中的效果 
+        border 边框线  
+        cellpadding 单元格的内填充 
+        cellspacing 单元格的外间距 和 border-collapse: collapse是相互冲突的，会导致cellspacing属性失效
+    -->
+    <table border="1" cellpadding = "10" cellspacing = "10" class="tabBox">
+        <tr class="tr-one">
+            <th>姓名</th>
+            <th>性别</th>
+            <th>分数</th>
+        </tr>
+        <tr>
+            <td>李晓娟</td>
+            <td>女</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>李晓娟</td>
+            <td>女</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>李晓娟</td>
+            <td>女</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>李晓娟</td>
+            <td>女</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>李晓娟</td>
+            <td>女</td>
+            <td>100</td>
+        </tr>
+    </table>
+</body>
+</html>

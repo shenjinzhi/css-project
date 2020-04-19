@@ -1,0 +1,86 @@
+【设计稿项目 - PSD - 分层的设计稿】
+1.Photoshop
+2.PS的插件 - 蓝湖 -  PSCC2015以上版本    PS CS6
+3.珠峰设计稿 => 拖到PS中打开
+
+【切图】
+1.PS插件 - 蓝湖 - 批量切图导出而且自带压缩功能
+2.PS的切片
+3.PS的智能对象 
+
+【合并图层】
+ctrl + E
+
+【填充颜色】
+ctrl + del  设置前景色
+alt + del   设置背景色 
+按住ctrl点击图层的空白区域，会出现虚线的区域，这样再去填充颜色
+ctr + D 可以取消虚线区域
+ctrl + shift + alt + S  保存图片
+
+【历史记录】
+窗口 => 历史记录 => 可以回到设计稿打开的最原始的状态
+
+蓝湖项目的链接地址  => 分享给你 
+=>  排期
+
+【项目目录要求】
+1.项目文件名称 =>  
+srit_sort_zhufeng 公司简称 + 项目名称     
+zhufeng_20191218  项目名称+ 时间 
+2.图片文件夹   images   
+3.样式文件夹   css
+4.JS文件夹     js
+5.首页         index.html
+6.子页面       list  =>  book.html
+.... 
+
+静态页面 static  =>  index.html  list.html  detail.html....
+
+【swiper轮播图插件】
+1.首先加载插件，需要用到的文件有swiper.min.js和swiper.min.css文件,要css放在head里，JS放在body的最后
+<link rel="stylesheet" href="css/swiper.min.css">  head标签里面
+<script src="js/swiper.min.js"></script>  放在body他的结构的最后 
+
+2.插入插件自带的HTML内容  => 复制粘贴
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+    </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+    
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+    <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>
+</div>
+
+3.设置swiper的基础配置，放在body前面，紧挨着body标签
+<script>        
+  var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'vertical', // 垂直切换选项
+    loop: true, // 循环模式选项
+    
+    // 如果需要分页器
+    pagination: {
+      el: '.swiper-pagination',
+    },
+    
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    
+    // 如果需要滚动条
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  })        
+  </script>
+

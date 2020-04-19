@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0;maximum-scale=1.0; minimum-scale=1.0;user-scalable=no;">
+    <meta name="description " content=" ">
+    <meta name="keywords " content=" ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>珠峰培训</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- 轮播图 -->
+    <div class="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="http://sf1-ttcdn-tos.pstatp.com/img/web.business.image/201912315d0dd7aa5835f5874d61b701~640x0.image"
+                            alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="http://sf1-ttcdn-tos.pstatp.com/img/web.business.image/201912315d0dd7aa5835f5874d61b701~640x0.image"
+                            alt="">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="http://sf1-ttcdn-tos.pstatp.com/img/web.business.image/201912315d0dd7aa5835f5874d61b701~640x0.image"
+                            alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!-- 内容块 div  左图 右文 -->
+    <section class="item-sec">
+        <a href="#">
+            <div class="item-img">
+                <img src="https://p3.pstatp.com/list/pgc-image/28ab793e0e0a4dcba9633d09c557e058" alt="">
+            </div>
+            <div class="item-desc">
+                <h3 class="item-tit">徐峥真的强！仅11天《叶问4》被赶下第一，碾压好莱坞3亿大片夺冠</h3>
+                <div class="item-info">人物每日说</div>
+            </div>
+        </a>
+    </section>
+
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true, // 循环模式选项
+
+            // 如果需要分页器   fraction 分数  1/3   1个/3
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+        })
+
+        // 动态判断rem的大小
+        function refreshRem() {
+            var desW = 750,
+                winW = document.documentElement.clientWidth,
+                ratio = winW / desW;
+            document.documentElement.style.fontSize = ratio * 100 + 'px';
+        }
+        refreshRem();
+        window.addEventListener('resize', refreshRem);
+    </script>
+</body>
+
+</html>

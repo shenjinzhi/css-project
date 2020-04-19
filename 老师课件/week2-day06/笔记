@@ -1,0 +1,26 @@
+【背景类属性 css2 5个  CSS3 新增 3个】
+- background-color
+- background-image
+- background-repeat
+- background-position 
+- background-attachment:scroll /  fixed(固定不动)
+
+以上五个背景类的属性可以合并成一个复合属性 
+background: #000 url() no-repeat center center  fixed
+
+背景新增的三大属性  CSS3  不可以合并成背景的复合属性background
+- background-size 背景尺寸 
+- background-clip  背景裁剪
+- background-origin 背景显示的原点
+
+【盒子模型】
+- 什么叫盒子模型  请画出盒子模型图
+- 盒子模型取值   width height padding  border margin
+- 盒子的计算公式
+- 正常盒子模型和怪异盒子模型的区别 box-sizing:border-box
+- border 边框线  制作三角形   
+- 面试题原题： 计算题  
+
+- margin的负值的技巧  margin的传递 重叠 以及解决办法
+
+【实战 - 摩拜单车】

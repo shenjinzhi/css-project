@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description " content =" ">
+    <meta name="keywords " content =" ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>珠峰培训</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+    .parent{
+        width: 500px;
+        height: 500px;
+        background: #000;
+        overflow: hidden;
+    }
+    .son{
+        width: 400px;
+        height: 200px;
+        background: red;
+        margin-top:50px;
+    }
+    .box1{
+        width: 500px;
+        height: 500px;
+        background: gold;
+        margin-bottom:50px;
+    }
+    .box2{
+        width: 500px;
+        height: 500px;
+        background: red;
+        margin-top:80px;
+    }
+    .box{
+        overflow: hidden;
+    }
+    </style>
+</head>
+<body>
+<!-- 传递问题: 嵌套结构 -->
+<div class="parent">
+    <div class="son"></div>
+</div>
+
+<!-- 重叠问题: 上下结构 => 取大 
+想要相加的结构: 设置margin-top属性的容器的外层套一个容器，给这个套的容器加属性overflow:hidden
+-->
+<div class="box1"></div>
+<div class="box">   
+    <div class="box2"></div>
+</div>
+</body>
+</html>

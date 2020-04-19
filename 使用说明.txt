@@ -1,0 +1,37 @@
+1、在阿里巴巴字体库中下载  ->加入购物车  ->下载
+2、把四种文字后缀放在一个文件夹中:svg ttf  eot  woff  ，然后放在项目文件夹中
+3、在vscode中引入.css文件，需要改的是引入的路径url，以及添加类名（需要的图标前面的类名 以及iconfont的类名，以下两个类名）
+
+
+阿里巴巴字体库网址链接
+https://www.iconfont.cn/
+
+打开的.css是iconfont.css，需要更改的url是让文件找到刚才的字体库
+
+需要更改的路径
+ url('../../fonts/iconfont.eot?t=1577416138710');
+            /* IE9 */
+ url('../../fonts/iconfont.eot?t=1577416138710#iefix') format
+
+需要添加的类名
+ .iconfont {
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+.icon-information:before {
+            content: "\e69e";
+        }
+
+body中的代码块
+ <span class="iconfont  icon-icon-test3"></span>
+ <span class="iconfont">&#xe658</span>
+第二种用法：&#x加字符的编码
+content内容
+
+在一个网页中下载他所用的icon方法：
+      控制台中找到network 下的font，如果出不来可以重新刷新，有了以后右击open in new就可以下载；
+      一般下载下来都是一个，需要四个就直接复制，然后更改后缀名就可以

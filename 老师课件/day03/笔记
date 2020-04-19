@@ -1,0 +1,54 @@
+[标签语法和分类]
+- 左右尖括号包起来  <小写的标签名称> <div></div>
+- 一般由开始和结束标签组成 成对标签
+- 单标签，自闭合标签 <img />  <hr />  <br />
+
+[常用标签]
+- img 
+- a
+- p
+- h1-h6
+- div、span
+- 列表系列  ul li 、ol li 、dl dt dd  成对的标签
+- 上下标  sup  sub
+- 斜体  em、i、 加粗  strong、b
+
+[标签属性]
+- img  src =  ""  alt = ""      title = "" 
+- a    href = ""  target = "_blank"  "_self"
+
+[问题: 标签嵌套  标签选用  结构 - 上下 = > 左右]  为什么会出现这样的问题，解决问题
+
+[元素的分类]
+行内元素  a、em、i....
+- display: inline (行内,内联)
+- 不独占一行的元素
+- 左右结构
+- 设置宽高属性不起作用,但是利用属性display:block / inline-block 进行转化
+- 加了float浮动属性之后,display变成block了
+- 受换行符的影响产生默认的间距 解决办法: 给父元素 font-size:0  
+
+块级元素   div、p、三大列表
+- display: block (块级)
+- 独占一行的元素
+- 上下结构  
+- 可以设置宽高以及盒子模型的所有属性
+
+行内块元素： 既有行内元素的特点 又有块级元素的特点    骡子 =  驴 + 马 
+- display:inline-block
+- 不独占一行
+- 受换行符的影响产生默认的间距  解决办法: 给父元素 font-size:0  
+
+[标签嵌套的要求]
+- 块标签里面可以嵌套块标签以及行内标签   <div><a></a></div>
+- 行内标签里面不能嵌套块标签  
+
+[去掉css的默认属性]
+去掉浏览器默认自带的间距 *{margin:0;padding:0} 
+去掉a的默认的下划线 text-decoration: none;
+去掉li默认的小黑点和数字  list-style: none;
+
+
+
+
+ 

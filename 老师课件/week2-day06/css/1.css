@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,
+body,
+.main{
+    width: 100%;
+    height: 100%;
+}
+.item{
+    float: left;
+    width: 33.33%;
+    height: 33.33%;
+    background-image: url(../images/1.gif);   /* 背景图片 */
+    background-repeat: no-repeat;   /* 背景平铺: 不平铺 */
+    background-position: center;   /* 背景的定位: 居中 */
+    background-size: cover;  /* 背景的尺寸: 覆盖 充满整个容器大小 */
+}
+video{
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+/* .item1{}
+.item:nth-child(1){} */

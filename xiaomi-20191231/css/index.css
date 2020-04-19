@@ -1,0 +1,219 @@
+.app-shell img{
+    width: 100%;
+    display: block;  
+}
+.app-header-wrapper{
+    /* 控制子元素在一行排列 */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* 控制子元素垂直对齐 */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.app-logo{
+    width: .6rem;
+    margin:0 .2rem;
+}
+.app-logo img{
+    display: block;
+    width: 100%;
+}
+/* 中间搜索框 */
+.app-center{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: relative;
+}
+.app-text{
+    display: block;
+    width: 100%;
+    padding-left: .4rem;
+    border:1px solid #e5e5e5;
+    border-radius: .04rem;
+    font-size: .3rem;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.app-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.6rem;
+    height: 0.6rem;
+    border: 0;
+    background: url(../images/sou.png) no-repeat;
+    background-size: .4rem .4rem;
+}
+/* 右   登录 */
+.app-right{
+    width: 0.6rem;
+}
+.app-login-icon{
+    display: block;
+    width: 0.6rem;
+    height: 0.6rem;
+    background: url(../images/icon.png)no-repeat center;
+    background-size: .4rem .4rem;
+}
+.nav-wrap{
+    display: flex;
+    align-items: center;
+}
+.nav-item{
+    font-size: .26rem;
+    flex: 1;
+    text-align: center;
+    line-height: .55rem;
+}
+.nav-item a{
+    text-decoration: none;
+    color: #747474;
+}
+.nav-display-icon{
+    display: block;
+    width: 0.4rem;
+    height: 0.4rem;
+    background: url(../images/jiantou.png) no-repeat center;
+    background-size: cover;
+}
+/* 轮播图 */
+.banner img{
+    width: 100%;
+    display: block;
+}
+.swiper-pagination-bullet-active{
+    background:#fff;
+}
+/*  */
+.multi-cell{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.multi-cell a{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.multi-cell img{
+    display: block;
+    width: 100%          
+}
+/* 通屏广告位 */
+.cells-auto-fill{
+    display: flex;
+    border-bottom: 0.16rem solid rgb(245, 245, 245); 
+    background-color: rgb(245, 245, 245);
+}
+.cells-auto-fill a{
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+.cells-auto-fill img{
+    display: block;
+    width: 100%;
+}
+.multi-cell-warp{
+    margin-left: -.03rem;
+}
+.multi-cell-pic{
+    padding-left: .03rem;
+}
+.multi-cell-pic a{
+    margin-bottom:.03rem;
+    display: block;
+}
+/* 手机信息 */
+.item-wrap{
+    /* margin-left: -.03px; */
+    padding:0 6.25px;
+}
+.cells-auto-fill-4{
+    border-bottom:0.16rem solid rgb(255, 255, 255); 
+}
+.item-wrap .item{
+    float: left;
+    width: 50%;
+    margin-bottom: .03px;
+    border-left: .05rem solid #fff;
+    box-sizing: border-box;
+}
+.item-wrap .item img{
+    width: 3.44rem;
+    height: 2.8rem;
+}
+.item-text{
+    text-align: center;
+    padding: 0.2rem 0.27rem;
+    margin-left: 0;
+}
+.item-text h5{
+    font-size: .28rem;
+    color: rgba(0,0,0,.87);
+    margin: 0;
+}
+.item-text p{
+    margin-top: .06rem;
+    font-size: .22rem;
+    line-height: .3rem;
+    color: rgba(0,0,0,.54);
+    margin: 0;
+}
+.item-text-prc{
+    height: 1.5em;
+    line-height: 1.5em;
+    font-size: .28rem;
+}
+.item-text-prc span{
+    font-size: .28rem;
+    color: #ea625b;
+    display: inline-block;
+}
+.item-text-prc .price{
+    display: inline-block;
+    margin-left: .04rem;
+    font-size: .2rem;
+    color: #ea625b;
+}
+.item-text-prc del{
+    font-size: .22rem;
+    color: rgba(0,0,0,.54);
+}
+.item-text a{
+    text-decoration: none;
+    width: 2rem;
+    background: #ea625b;
+    border-radius: .05rem;
+    text-align: center;
+    color: #fff;
+    font-size: .24rem;
+    padding: .16rem 0;
+    font-weight: 700;
+    margin: 0 auto;
+    display: block;
+}
+.ti{
+    color: rgba(0,0,0,.6);
+    line-height: 1rem;
+    font-size: .28rem;
+    text-align: center;
+    border-bottom:0.16rem solid rgb(255, 255, 255); 
+}
+.two{
+    width: 100%;
+    padding: .64rem .12rem 0 .32rem;
+    text-align: left; 
+    height: 2.8em;
+}
+.three{
+    margin-top: .2rem;
+}
+.four img{
+    width: 3.58rem;
+    height: 4.8rem;
+    border-left: 1px solid #fff;
+}

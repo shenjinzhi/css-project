@@ -1,0 +1,41 @@
+.banner img{
+    width: 100%;
+    display: block;
+}
+.swiper-pagination{
+    color:yellow;
+    font-size:40px;
+}
+/* display:flex 控制它的子元素的水平排列，加在父元素身上的属性 
+   align-items: flex-start / flex-end / center;   子元素整体对齐 
+
+   [box]
+    -webkit-box-pack: justify;   = > align-items 
+*/
+.item-sec a{
+    -webkit-display:flex;
+    -ms-display:flex;
+    display:flex;
+}
+.item-desc{
+    -webkit-box-orient: vertical; /* 子元素排列方式: 垂直*/
+    display: -webkit-box;        /* 弹性盒模型*/
+    -webkit-box-pack: justify;   /* 子元素两端对齐*/
+}
+.item-desc .item-tit{
+    /* 文字多行出现省略号:1.弹性盒模型  2.子元素排列的方式: 垂直 3.行数: x  4.炒熟行数隐藏起来 */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow:hidden;
+
+    font-size: .36rem;
+    color:#a1a1a1;
+    line-height: .44rem;
+    font-weight: 400;
+    margin:0;
+}
+.item-desc .item-info{
+    font-size:.22rem;
+    color:#999;
+}

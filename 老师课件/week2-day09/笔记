@@ -1,0 +1,51 @@
+淘宝：图片的类型
+1.插入图片img   <img src = "图片的路径地址 "/> .jpg .png .gif .jpeg .svg .webp 2.背景图片background: 背景颜色 图片 平铺 定位 随滚动条滚动或固定  尺寸 裁剪 原点 ... 
+3.字体图标  @font-face   .eot .ttf .woff .svg   阿里巴巴图标库  iconfont.css    好处: 可以用文字相关的属性  缺点: 纯色
+4.svg代码路径
+
+[CSS背景类属性 - 八大]
+1.background-color
+2.background-image
+3.background-repeat
+4.background-position
+5.background-attchment
+
+以上五个属性可以合并成一个复合属性 background
+
+CSS3-新增背景类三大属性
+1.background-size
+2.background-origin
+3.background-clip
+
+【盒子模型】
+width
+height
+padding
+border  border-width border-style boder-color width:0   
+        border-top:1px solid red;
+margin
+面试题: 
+请说出常用的长度单位?   px % em rem  vw vh
+请描述盒子模型，box-sizing:border-box
+用css实现一个三角形(不切图)  圆角 border-radius
+margin-top的传递以及margin的重叠
+计算题 - 坑   border-top:10px; 这样的设置边框线其实是失效的 为0
+        box-sizing:border-box
+
+【定位面试题】
+1.position的取值
+2.三种定位的参照物
+3.一个浮动元素(div)水平垂直居中,请用定位的方法实现？(3种)
+
+【动画的三剑客】 0  90  180  360  -90
+transform  变换特效: scale 缩放 translate 位移  rotate deg 角度旋转 skew 扭曲
+transition 过渡动画(CSS属性的变化)  
+animation  关键帧动画 @keyframes 名称{}
+
+【PS切图】
+
+
+
+
+
+ 

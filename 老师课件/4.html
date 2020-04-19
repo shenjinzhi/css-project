@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description " content =" ">
+    <meta name="keywords " content =" ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>珠峰培训</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+    /* 背景裁剪  background-clip: text 
+    以文字往外进行裁剪，保留文字的部分的背景, 想要看到文字后面的背景，只需要让文字的颜色变成透明即可
+    
+    浏览器兼容写法:
+    谷歌浏览器 -webkit-
+    火狐浏览器 -moz-
+    IE浏览器 -ms-
+    */
+    .demo{
+        font-size:200px;
+        font-weight: bold;
+        text-align: center;
+        background: url(https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1577430822396&di=47037b0c6a7c4e20922b126acbe17af2&imgtype=0&src=http%3A%2F%2Fg.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2Fb3119313b07eca80b3d2871a972397dda044837c.jpg);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color:transparent;
+        animation: demo 1s ease infinite alternate;
+    }
+    /*transform 变换   alternate 交替运动 infinite无限次  ease 匀速曲线
+    - 位移 translate(x,y) 
+    - 缩放 scale(1.2) (0.8)
+    - 旋转 rotate(10deg)
+    */
+    @keyframes demo {
+       0%{background-position: 0 0;}
+       100%{background-position:500px 0;}
+    }
+    </style>
+</head>
+<body>
+<div class="demo">珠峰培训</div>
+</body>
+</html>

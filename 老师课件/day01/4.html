@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS的语法</title>
+    <style>
+        /* css样式  选择器{}  鼠标右键: 格式化文档*/
+
+        /*  标签选择器:所有叫相同标签名(p)的内容都会受影响  p{}
+        需求: 
+        p 红色 
+        p 黄色
+
+        类class选择器:  在开始标签名的后面 加class = "自己名的名称"
+        在样式中是一个小黑点  .p1{}
+        区别: 标签名 <p></p>   p{}    
+        <div class="box"></div> .box{}
+        */
+        .p1 {
+            color: #ffff00
+        }
+
+        .p2 {
+            color: red
+        }
+
+        .div1 {
+            width: 100px;
+            height: 200px;
+            background-color: red;
+        }
+
+        .div2 {
+            width: 200px;
+            height: 300px;
+            background-color: green;
+        }
+
+        .div3 {
+            width: 300px;
+            height: 400px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ctrl + shift + { 折叠代码
+         ctrl + shift + } 展开代码
+         shift + Alt + F  代码格式化
+     -->
+
+    <div>
+        <p class="p1">珠峰培训1</p>
+        <p class="p2">珠峰培训2</p>
+    </div>
+    <!-- 小作业: 
+    三个容器  div
+    一个容器尺寸 100 *200  背景颜色 red
+    二个容器尺寸 200 *300  背景颜色 green
+    三个容器尺寸 300 *400  背景颜色 yellow
+    -->
+    <div class="div1"></div>
+    <div class="div2"></div>
+    <div class="div3"></div>
+</body>
+
+</html>

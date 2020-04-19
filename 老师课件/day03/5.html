@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description " content =" ">
+    <meta name="keywords " content =" ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>珠峰培训</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+    .price{font-size: 0;}
+    /* 行内元素 设置宽高不起作用的 display:block / inline-block */
+    .price-current{ display:inline-block;width:300px;height:50px;background-color: red;font-size:20px;}
+    .price-origin{ display:inline-block;width:300px;height:50px;background-color: gold;font-size:20px;}
+
+    .box{
+        display: none;
+        width: 400px;
+        height: 400px;
+        background: #000;
+    }
+    </style>
+</head>
+<body>  
+<div class="price">
+    <span class="price-current">￥88</span>
+    <span class="price-origin">￥888</span>    
+</div>
+
+<div class="box"></div>
+</body>
+</html>

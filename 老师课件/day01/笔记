@@ -1,0 +1,20 @@
+[Vscode]
+1.插件 
+汉化chinese  
+在浏览器打开网页 open in brower
+
+2.常用的配置
+自动保存  Auto Save   off => afterDelay
+字体大小  Font Size   
+代码折行  word wrap   off => on 
+
+[常用的几个标签]
++  插入图片  img  src="图片的路径"  alt ="图片的描述文字,图片加载失败或者出错会显示"  title = "鼠标移动到图片上的文字描述内容"
++  文字相关
+   超链接 a  href = "跳转的链接地址"  target = "_blank"
+   段落   p
+   标题   h1-h6
++  划分结构 
+    div    =>  为了让相同的div相互之间不要影响   class = "xx"
++  样式标签   style   选择器{属性名:属性值;....}
++  播放器 视频video  src = ""   autoplay   cotrols

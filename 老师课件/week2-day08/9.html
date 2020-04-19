@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description " content =" ">
+    <meta name="keywords " content =" ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>珠峰培训 demo</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+     /* rgba  rgb 颜色写法  alpha 透明度 */
+    *{margin: 0;padding: 0;}
+    .pic{width:200px;height:200px;position: relative;overflow: hidden;}
+    .pic img{width: 100%;height:100%;transition:all 1s ease;}
+    .mask{width:100%;height:80px;background:rgba(0,0,0,.8);position: absolute;bottom:-80px;left:0;transition: all 1s ease;}
+
+    /* 动画相对来说不要太过于僵硬  
+    transition:过渡动画的属性名称all  持续时间 运动曲线 延迟时间;
+
+    为了让鼠标移入移出都有过渡动画效果，transition一定要加在没有鼠标对象的元素的本身身上
+
+    面试题: 如何让div水平垂直？？？(定位有几种写法)
+    */
+    .pic:hover img{transform: scale(1.2);opacity:.5;}
+    .pic:hover .mask{bottom:0;}
+    </style>
+</head>
+<body>
+<div class="pic">
+    <img src="https://inews.gtimg.com/newsapp_ls/0/11046419390_640330/0" alt="">
+    <div class="mask"></div>
+</div>
+</body>
+</html>

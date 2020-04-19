@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description " content =" ">
+    <meta name="keywords " content =" ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>珠峰培训</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+    *{margin:0;padding:0}
+    .pic{width:200px;margin:50px auto;position:relative;}
+    .pic img{width:200px;height:200px;z-index:9;position:relative;}
+    .mask{width: 200px;height:80px;background-color: darkgoldenrod;
+        position: absolute;
+        bottom:0;
+        left:0;
+        z-index: 99;
+    }
+    .box{
+        width: 400px;
+        height:400px;
+        background: #000;
+        top:50px;
+        position:relative;
+    }
+    </style>
+</head>
+<body>
+<!-- 
+定位
+1.固定定位：固定不动  position:fixed
+2.相对定位 position:relative
+3.绝对定位 position:absolute
+
+遮盖层需要覆盖在图片身上：
+1.有没有可能是固定定位 => 绝对不会是固定定位 => 固定不动 => 参照物:是整个浏览器窗口;
+2.有没有可能是相对定位 => 不可能是相对定位 => 不脱离文档流的=>参照物:自己原来的位置   +  用来作为绝对定位的参照物，加在父元素的身上
+  +  想要不要脱离文档流，只是简单的位移，方位(top bottom left right)
+3.绝对定位 => 参照物: 先看自己的父元素有没有position:fixed/relative/absolute属性，没有会往上查找，直到找到最外层的html，也就是参照整个浏览器窗口
+
+【相同点】
+=> 都可以有方位 top bottom  left right
+=> z-index 元素的层叠顺序  
+=> 定位元素才会有z-index
+=> z-index越大 层级越大
+注意: 方位和z-index是定位元素所特有的属性
+
+【区别】
+1.是否脱离文档流
+=>  固定 绝对 脱离  
+=>  相对 不脱离
+
+2.参照物
+=> 固定  参照 浏览器窗口
+=> 相对  参照 自己本身的位置
+=> 绝对  参照 先看父元素没有加position(relative 不影响文档流的) 
+         父元素有position，设置方位的取值是对它的父元素来说的 
+         父元素没有position，一直往上查找，直到找到最外层的html为止，设置方位的取值是对浏览器窗口来说的；  
+-->
+
+<div class="box"></div>
+<div class="pic">
+    <img src="https://shp.qpic.cn/cms_pic/2561008992/c3d1bdec09889a8cb55e5598fa5023af/258" alt="">
+    <div class="mask"></div>
+</div>
+<div style="height:1000px;"> </div>
+
+</body>
+</html>

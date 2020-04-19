@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description " content =" ">
+    <meta name="keywords " content =" ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>珠峰培训</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+    a{
+        text-decoration: none;
+        color:#000
+    }
+    a:hover{
+        text-decoration: underline;
+        color:red
+    }
+    p:hover{
+        background-color: darksalmon;
+    }
+    /* 鼠标移到整个文字上，只让span里面的文字加粗
+    后代选择器  ul  li  span  a{}
+    */
+    p:hover  span{
+        font-weight: bold;
+        color:yellow
+    }
+    </style>
+</head>
+<body>
+    <!-- 需求: 默认黑色 没有下划线
+         鼠标移上 红色 下划线  :hover 鼠标事件
+    -->
+    <a href="#">珠峰web前端全栈课程课堂笔记，质量和深度一目了然</a>
+    <p>珠峰<span>web前端</span>全栈课程课堂笔记，质量和深度一目了然</p>
+</body>
+</html>  

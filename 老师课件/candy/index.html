@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>candy</title>
+  <style>
+    body {
+      background: #fafafa;
+      animation: color 8s linear infinite;
+    }
+    #candyBox {
+      margin: 300px auto;
+      width: 300px;
+      height: 100px;
+      /* 盒子的右上角的圆角 */
+      border-top-right-radius: 100px;
+      /* 盒子的右下角的圆角 */
+      border-bottom-right-radius: 100px;
+      overflow: hidden;
+      /* rgba(红色，绿色，蓝色，透明度) 其中颜色最大值是 255，最小是 0，透明度最大是 1，最小是 0*/
+      /* box-shadow: 14px 17px 11px -5px rgba(255, 0, 0, 0.1); */
+      animation: shake 8s linear infinite;
+    }
+
+    #candy {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      background: red;
+      /* 重复线性渐变：角度，颜色 */
+      background: repeating-linear-gradient(135deg, #ffffee, #ffffee 15px, #d33144 15px, #d33144 30px);
+      /* 动画：动画名称 运行时间 运行效果 是否循环 */
+      animation: candy 8s linear infinite;
+    }
+
+    #candy::after {
+      /* 伪元素 */
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 200px;
+      background: #fafafa;
+      animation: color 8s linear infinite;
+    }
+
+    #candy::before {
+      /* 伪元素 */
+      position: absolute;
+      content: "";
+      top: 25px;
+      left: 0;
+      height: 50px;
+      width: 275px;
+      background: #fafafa;
+      
+      /* 盒子的右上角的圆角 */
+      border-top-right-radius: 50px;
+      /* 盒子的右下角的圆角 */
+      border-bottom-right-radius: 50px;
+      animation: color 8s linear infinite;
+    }
+
+    /* 糖果展示 */
+    @keyframes candy {
+      0% {
+        width: 0;
+      }
+
+      50% {
+        width: 300px;
+      }
+    }
+
+    /* 改变背景颜色 */
+    @keyframes color {
+      45% {
+        background: #fafafa;
+      }
+
+      50% {
+        background: #31d354;
+      }
+
+      95% {
+        background: #31d354;
+      }
+    }
+
+    /* 拐杖糖摇摆 */
+    @keyframes shake {
+      45% {
+        box-shadow: none;
+      }
+
+      50% {
+        transform: rotate(0deg) scale(1);
+        box-shadow: 14px 17px 11px -5px rgba(255, 0, 0, 0.1);
+      }
+
+      55% {
+        transform: rotate(-100deg) scale(1);
+      }
+
+      60% {
+        transform: rotate(-60deg) scale(1);
+      }
+
+      70% {
+        transform: rotate(-120deg) scale(1);
+      }
+
+      80% {
+        transform: rotate(-70deg) scale(1);
+      }
+
+      90% {
+        transform: rotate(-100deg) scale(1);
+      }
+
+      95% {
+      }
+
+      100% {
+        transform: rotate(-180deg) scale(0);
+        box-shadow: 14px 17px 11px -5px rgba(255, 0, 0, 0.1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- 糖果的盒子 -->
+  <div id="candyBox">
+    <!-- 糖果 -->
+    <div id="candy"></div>
+  </div>
+</body>
+</html>

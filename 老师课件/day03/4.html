@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description " content =" ">
+    <meta name="keywords " content =" ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>珠峰培训</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+    /* 方法一: 浮动是加img身上，a 不需要加任何的限制 自适应 
+       浮动的原理和特性: 图片浮动，文字会自动围绕图片进行排列
+    */
+    /* 
+    .pic{width:324px;height:500px;background-color: darkgray;}
+    img{float: left;} 
+    */
+
+    /* 方法二: 浮动是加文字身上  324 214  110
+    浮动加上之后文字就独占一行了  这种情况还是上不去的，需要把宽度限制一下
+    */
+    .pic{width:324px;height:500px;background-color: darkgray;}
+    a{float:right;width:110px}
+    </style>
+</head>
+<body>
+    <div class="pic">
+        <img src="hic.jpg" alt="">
+        <a href="#">侠客岛：首艘国产航母正式服役！山东舰到底有多强？</a>
+    </div>
+</body>
+</html>

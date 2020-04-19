@@ -1,0 +1,17 @@
+网页的组成部分: 
+- HTML: 结构层  静态页面      xxx.html   
+  +  标签  分类  
+- CSS: 样式层   美化静态页面  xxx.CSS
+- JS：行为层    交互
+  
+
+标签汇总: 
+- 行内:display:inline       
+  a、em、i、span、strong、b、sup、sub、del、small、big、img、video
+- 块级:display:block
+  div、h1-h6、p、ul li、ol li、dl dt dd、hr、table、
+
+
+
+
+

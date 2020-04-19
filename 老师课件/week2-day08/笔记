@@ -1,0 +1,60 @@
+【浮动了解多少，项目中遇到过哪些问题】
+1.脱离文档流
+2.不独占一行
+3.高度塌陷问题(父元素的高度0)
+4.float本身就具有块元素的特点 display:block
+5.浮动的本质: 为了让文字围绕图片排列,給图片加浮动即可
+6.左右的结构，一定要同时都加浮动
+
+【清除浮动的方法】
+让父元素height不是0就可以了
+1.手动給父元素添加属性height是子元素的高度 (缺点: 固定高度会把模块高度限制死)
+2.給父元素添加属性 overflow:hidden => 触发BFC => 计算BFC的高度时，浮动元素也参与计算(缺点: overflow:hidden本身具有溢出隐藏的特点)
+3.浮动的克星 =>  css: clear  => 添加在浮动元素的末尾，加一个具有块特点的标签(div)，然后給这个标签添加属性 clear:both  (缺点: 结构添加了很多无意义的div标签)
+4.clearfix 通用的方法去清除浮动  (项目中最常用的方法)
+万能钥匙:
+.clearfix::after{
+  content:"";
+  display:block/table; 
+  clear:both
+  width:0;
+  height:0;
+  line-heiht:0;
+  font-size:0;
+  overflow:hidden;
+  visiblity:hidden;
+}
+.clearfix{
+    *zoom:1
+}
+
+
+
+【面试题原题】 
+请说出清除浮动的方法，各自的优缺点？？
+
+ 【clear 清除浮动的属性】
+ 1.clear:left
+ 2.clear:right
+ 3.clear:both
+
+【float 和 display:inline-block的区别，项目中怎么选用】 
+1.相同点: 上下结构 => 左右结构 
+2.区别
++ float色块不会受换行符产生间距   display:inline-block 色块会受换行符产生间距 
++ float 会导致父元素的高度塌陷为0  display:inline-block 不会有这样的问题  
++ 兼容性: float全兼容    display:inline-block  (IE6,7下不兼容)
++ 布局: 左右结构 float  小图标 + 文字组合  display:inline-block (基线对齐) 
++ 对齐的方式: 行内块对齐是基线对齐 vertical-align: top/middle/bottom
+             浮动对齐  用margin去微调间距让图标和文字对齐
+
+口令: 用浮动一定要随手就把当前浮动产生的影响清除掉
+        用行内块一定要去间距，处理兼容         
+
+【文档流以及脱离文档流】
+文档流:元素从上到下依次解析
+正常文档流: 元素 从上到下 或 左到右 排列的方式(块级元素  行内元素)
+脱离文档流: 浮动  定位(绝对，固定)
+
+
+

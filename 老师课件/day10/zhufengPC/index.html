@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description " content=" ">
+    <meta name="keywords " content=" ">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>珠峰培训</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- 重置样式表 reset.min.css  -->
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>    
+    <!-- header begin -->
+    <div class="header container-md clearfix">
+        <!-- logo -->
+        <h1 class="logo">
+            <a href="#" target="_blank">
+                <img src="images/logo.png" alt="">
+            </a>
+        </h1>
+
+        <!-- nav -->
+        <ul class="nav">
+            <li><a href="#">Node培训课程</a></li>
+            <li><a href="#">Node培训课程</a></li>
+            <li><a href="#">Node培训课程</a></li>
+            <li><a href="#">Node培训课程</a></li>
+            <li><a href="#">Node培训课程</a></li>
+        </ul>
+
+        <!-- user -->
+        <ul class="user-center">
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+        </ul>
+
+        <!-- cart -->
+        <div class="cart">
+            <span class="cart-icon">
+                <i></i>购物车
+            </span>
+            <div class="layer"></div>
+        </div>
+    </div>
+    <!-- header end -->
+
+    <!-- banner begin -->
+    <div class="banner container-md">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#"><img src="images/banner01.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="images/banner02.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="images/banner03.jpg" alt=""></a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#"><img src="images/banner04.jpg" alt=""></a>
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="site-category-list">
+            <ul>
+                <li>
+                    <span>JavaScript免费基础课</span>
+                    <div class="site-layer">11111</div>
+                </li>
+                <li>
+                    <span>JavaScript免费基础课</span>
+                    <div class="site-layer">222222</div>
+                </li>
+                <li>
+                    <span>JavaScript免费基础课</span>
+                    <div class="site-layer">33333</div>
+                </li>
+                <li>
+                    <span>JavaScript免费基础课</span>
+                    <div class="site-layer">444444</div>
+                </li>
+                <li>
+                    <span>JavaScript免费基础课</span>
+                    <div class="site-layer">555555</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- banner end --> 
+
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true, // 循环模式选项
+            autoplay: { // 自动播放  
+                delay: 3000,
+                disableOnInteraction: false, // 用户操作之后是否重新开启自动轮播 false 开启  true 禁止
+            },
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+                clickable :true // 点击小圆点控制轮播图的切换
+            },
+        })
+    </script>
+</body>
+
+</html>
