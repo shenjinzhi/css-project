@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.chcedo{
+    width: 100%;
+    height: 100%;
+    background-color: #00a77b;
+    overflow: hidden;
+}
+.first{
+    width: 100%;
+    height: 33.33%;
+    overflow: hidden;
+}
+.first-list{
+    float: left;
+    width: 33.33%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+img{
+    width: 100%;
+    float: left;
+    position: absolute;
+    /* left: 50%;
+    top: 50%; */
+    margin: -25% 0 0 0;
+}
+.one-mp4{
+    width: 100%;
+    position: absolute;
+    top:100%;
+}
+.first-list:hover .one-mp4{
+    top:-50%;
+}
+.first-word{
+    position: absolute;
+    left: 30px;
+    top: 25%;
+    font-family: 'Helvetica Neue CE 55 Roman';
+    font-size: 12px;
+    z-index: 5;
+}
+.first-word span{
+    display: block;
+    color: #00a77b;
+    font-family: Helvetica,'Helvetica Neue CE 55 Roman';
+    letter-spacing: 3px;
+}
+.first-word a{
+    display: block;
+    color: #000;
+    font-family: font_hyxx;
+    font-size: 24px;
+    margin-top: 4px;
+    text-decoration: none;
+    font-weight: 300;
+}
+.first-list:hover .first-word{
+    top:-25%;
+}
+.first-word .two{
+    color:#acacac;
+}
+.three-mask{
+    width: 100%;
+    background-color:#f6f5f5;
+    height: 30px;
+    text-align: center;
+    opacity: 0.5;
+    position: absolute;
+    bottom: -30px;
+}
+.three-mask li{
+    display: inline-block;
+    vertical-align: middle;
+}
+.three-mask a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-family: "Microsoft YaHei";
+    font-size: 14px;
+    text-align: center;
+    padding: 0 10px;
+    border-right: 1px solid #000;
+}
+.three-mask .mask-b{
+    border-right:none;
+}
+.first-list:hover ul{
+    position: absolute;
+    bottom:0px;
+    left:0px;
+}
+.pic-5{
+    width: 40%;
+    position: absolute;
+    top:70%;
+    left:30%;
+}
+.pic-8-1{
+    position: absolute;
+    z-index: 2;
+    
+}
+.first-list:hover .pic-8-1{
+    position: absolute;
+    right: 100%;
+    z-index: 3;
+    transition: all 2s linear 0s;
+    /* transition-duration: 2s; */
+
+}

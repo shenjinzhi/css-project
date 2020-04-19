@@ -1,0 +1,75 @@
+*{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color:#F4F4F4;
+}
+/* 头部导航栏 */
+.aliyun-topbar{
+    height: 150px;
+    background-color:yellow;
+}
+/* 第二个盒子 */
+.index{
+    width: 1292px;
+    height: 624px;
+    margin: 15px auto;
+}
+.index-left{
+    display:inline-block;
+    width: 240px;
+}
+.index-left-top a{
+    display:inline-block;
+    width: 240px;
+    height: 30px;
+    background-color:#ff6a00; 
+    font-size:12px;
+    text-align: center;
+    color:#fff;
+    line-height: 30px;
+}
+.index-left-middle{
+    display:inline-block;
+    width: 240px;
+    height: 554px;
+    background-color: #fff;
+}
+.index-left-middle li{
+    width: 210px;
+    height: 55px;
+    padding:15px 15px 0px;
+}
+/* 域名与网站 */
+.index-left-middle a{
+    display:inline-block;
+    width: 208px;
+    height: 17px;
+    font-size:14px;
+    color:#181818;
+    margin:0px 0px 2px;
+}
+/* 域名注册/网站建设/云虚拟主机 */
+.index-left-middle span{
+    display: inline-block;
+    width: 208px;
+    height: 22px;
+    padding:6px 0px;
+    margin:0 auto;
+    border-bottom:1px solid #ededed;
+}
+.index-left-middle span a{
+    display:inline-block;
+    width: 65px;
+    font-size:13px;
+    color:#999;
+    vertical-align: middle;
+    line-height: 22px;
+}
+ul li span .index-left-middle-a{
+    border-left:2px 
+    solid #999;
+}

@@ -1,0 +1,61 @@
+html,body,.footer{
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: url(../images/5..webp) no-repeat ;
+    background-size:cover;
+    
+}
+.footer>div{
+    float: left;
+}
+.footer{
+    width: 780px;
+    height: 800px;
+    margin:280px auto;
+}
+.west01{
+    width: 200px;
+    height: 180px;
+    background:url(../images/1..png) no-repeat;
+    margin-top:30px;
+    animation: west01 1s steps(8) infinite;
+}
+.west02{
+    width: 200px;
+    height: 180px;
+    background:url(../images/2..png) no-repeat;
+    margin-top:30px;
+    animation: west02 1s steps(8) infinite;
+}
+.west03{
+    width: 170px;
+    height: 240px;
+    background:url(../images/3..png) no-repeat;
+    animation: west03 1s steps(8) infinite;
+    
+}
+.west04{
+    width: 210px;
+    height: 200px;
+    background:url(../images/4..png) no-repeat;
+    margin-top:30px;
+    animation: west04 1s steps(8) infinite;
+}
+@keyframes west01{
+    0%{background-position: 0 0;}
+    100%{background-position:-1600px 0px;}
+}
+@keyframes west02{
+    0%{background-position: 0 0;}
+    100%{background-position:-1600px 0px;}
+}
+@keyframes west03{
+    0%{background-position: 0 0;}
+    100%{background-position:-1360px 0px;}
+}
+@keyframes west04{
+    0%{background-position: 0 0;}
+    100%{background-position:-1680px 0px;}
+}
